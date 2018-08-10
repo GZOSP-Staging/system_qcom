@@ -5,6 +5,12 @@ include $(CLEAR_VARS)
 
 LOCAL_PRELINK_MODULE := false
 
+LOCAL_CFLAGS += \
+    -Wall \
+    -Werror \
+    -Wno-unused-variable \
+    -Wno-unused-parameter
+
 LOCAL_SRC_FILES := QWiFiSoftApCfg.c
 
 LOCAL_MODULE := libQWiFiSoftApCfg
